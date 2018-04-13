@@ -32,6 +32,8 @@ function build_cross_compilers(){
     # link units to usr/lib/fpc
     ln -sf ${CROSS_ROOT}/darwin/lib/fpc/3.0.4/units/* /usr/lib/fpc/3.0.4/units/
     install_pkg "/usr/share/fpcsrc/3.0.4" "make distclean"
+    # link ppcross386 to /usr/bin/ppc386
+    ln -s ${CROSS_ROOT}/windows/lib/fpc/3.0.4/ppcross386 /usr/bin/ppc386
 }
 
 build_cross_compilers
