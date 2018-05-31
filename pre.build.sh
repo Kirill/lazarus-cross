@@ -4,9 +4,9 @@ source config.sh
 
 function install_fpc(){
     cd ${CROSS_ROOT}
-    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.2/fpc-src_3.0.4-2_amd64.deb
-    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.2/fpc_3.0.4-2_amd64.deb
-    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.2/lazarus-project_1.8.2-0_amd64.deb
+    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.4/fpc-src_3.0.4-2_amd64.deb
+    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.4/fpc_3.0.4-3_amd64.deb
+    wget ftp://ftp.freepascal.org/pub/lazarus/releases/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.4/lazarus-project_1.8.4-0_amd64.deb
     wget https://github.com/taraworks/lazarus-cross-sdk/raw/master/MacOSX10.11.sdk.tar.xz
     dpkg -i fpc-src_3.0.4-2_amd64.deb
     dpkg -i fpc_3.0.4-2_amd64.deb
